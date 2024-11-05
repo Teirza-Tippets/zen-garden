@@ -1,17 +1,47 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 1 | @import "fonts";
- *   |         ^^^^^^^
- *   '
- *   sass\style.scss 1:9  root stylesheet */
+.skip-link,
+header,
+nav {
+  background-color: greenyellow;
+  padding: 0 auto;
+  margin: 0;
+}
 
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import \"fonts\";\d\a   \2502          ^^^^^^^\a   \2575 \a   sass\\style.scss 1:9  root stylesheet";
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  margin: 0;
+}
+nav ul li:hover {
+  background-color: darkgreen;
+  cursor: pointer;
+}
+
+.link-github svg {
+  width: 50px;
+}
+
+main {
+  background-color: skyblue;
+}
+main .container {
+  width: 50%;
+  text-align: center;
+  background-color: burlywood;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+aside {
+  display: flex;
+  background-color: rgb(192, 122, 41);
+}
+
+footer {
+  background-color: rgb(192, 122, 41);
+  color: white;
+  display: flex;
+  padding: 20px;
 }
