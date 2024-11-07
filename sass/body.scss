@@ -1,0 +1,14 @@
+$trunk-color: burlywood;
+$sky-color: skyblue;
+
+main {
+    background-color: $sky-color;
+    .container {
+        width: 50%;
+        text-align: center;
+        background-color: $trunk-color;
+        max-width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

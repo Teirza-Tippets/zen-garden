@@ -1,0 +1,11 @@
+main {
+  background-color: skyblue;
+}
+main .container {
+  width: 50%;
+  text-align: center;
+  background-color: burlywood;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
