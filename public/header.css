@@ -1,7 +1,6 @@
-.skip-link,
 header,
 nav {
-  background-color: greenyellow;
+  background-color: #3bc54e;
   padding: 0 auto;
   margin: 0;
 }
@@ -20,4 +19,10 @@ nav ul li:hover {
 
 .link-github svg {
   width: 50px;
+}
+
+.skip-link {
+  display: block;
+  padding: 0;
+  margin-bottom: -1.5em;
 }
