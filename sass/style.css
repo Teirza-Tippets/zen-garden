@@ -15,7 +15,6 @@ nav ul {
   padding: 15px;
   margin: 0;
 }
-
 nav ul li:hover {
   background-color: darkgreen;
   cursor: pointer;
@@ -25,4 +24,27 @@ nav ul li:hover {
   width: 50px;
 }
 
-/*# sourceMappingURL=header.css.map */
+main {
+  background-color: skyblue;
+}
+main .container {
+  width: 50%;
+  text-align: center;
+  background-color: burlywood;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+aside {
+  display: flex;
+  background-color: rgb(192, 122, 41);
+}
+
+footer {
+  background-color: rgb(192, 122, 41);
+  color: white;
+  display: flex;
+  padding: 20px;
+}/*# sourceMappingURL=style.css.map */
