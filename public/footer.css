@@ -1,11 +1,33 @@
-aside {
-  display: flex;
-  background-color: #c07a29;
+#files .container {
+  width: 50%;
+  text-align: center;
+  background-color: burlywood;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-footer {
-  background-color: #c07a29;
+.page-footer {
+  position: relative;
+  background-color: #59442e;
   color: white;
-  display: flex;
-  padding: 20px;
+  padding: 4rem 0;
+  overflow: hidden;
+}
+
+.page-footer .container {
+  position: relative;
+  z-index: 1;
+  /* Keeps content on top of everything */
+  text-align: center;
+  background-color: #59442e;
+  /* Same as page-footer */
+  padding: 2rem;
+  border-radius: 10px;
+  /* Optional for rounded corners */
+  /* Background Gradient */
+  background-image: radial-gradient(circle at 10% 20%, #402c1e 2%, transparent 3%), radial-gradient(circle at 50% 50%, #665545 1.5%, transparent 2%), radial-gradient(circle at 80% 30%, #4b3f34 2%, transparent 2.5%), radial-gradient(circle at 20% 80%, #3a3026 2.5%, transparent 3%), radial-gradient(circle at 70% 70%, #5b4c3c 2%, transparent 2.5%);
+  background-size: 30% 30%;
+  /* Adjusts spacing of each repetition */
+  background-repeat: repeat;
 }
