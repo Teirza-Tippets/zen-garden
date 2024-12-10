@@ -9,3 +9,15 @@ main .container {
   margin-left: auto;
   margin-right: auto;
 }
+
+aside {
+  background-color: skyblue;
+}
+aside .container {
+  width: 50%;
+  text-align: center;
+  background-color: burlywood;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}

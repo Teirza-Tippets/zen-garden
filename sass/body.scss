@@ -12,3 +12,15 @@ main {
         margin-right: auto; 
     }
 } 
+
+aside {
+    background-color: $sky-color;
+    .container {
+        width: 50%;
+        text-align: center;
+        background-color: $trunk-color;
+        margin-left: auto;
+        margin-right: auto; 
+        overflow: hidden;
+    };
+}
