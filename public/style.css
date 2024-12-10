@@ -31,6 +31,7 @@ nav ul {
   padding: 15px;
   margin: 0;
 }
+
 nav ul li:hover {
   background-color: darkgreen;
   cursor: pointer;
@@ -43,13 +44,90 @@ nav ul li:hover {
 main {
   background-color: skyblue;
 }
-main .container {
+
+
+.svg-background {
+  position: relative;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><defs><pattern id="barkPattern" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse"><rect x="0" y="0" width="10" height="10" fill="%238B4513" /><path d="M2 0 Q 1 5, 2 10 T 2 20" stroke="%236A3A12" stroke-width="0.5" fill="none" /><path d="M5 0 Q 6 5, 5 10 T 5 20" stroke="%235D2C10" stroke-width="0.5" fill="none" /><path d="M8 0 Q 7 5, 8 10 T 8 20" stroke="%237C3F12" stroke-width="0.5" fill="none" /></pattern></defs><rect width="100" height="100" fill="url(%23barkPattern)" /></svg>') no-repeat center;
+  background-size: cover;
+  padding: 2rem; 
+  color: white; 
+}
+
+.svg-background h2, 
+.svg-background p {
+  position: relative;
+  z-index: 1; 
+  color: white;
+}
+
+.svg-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 100%;
+  background: inherit; 
+  opacity: 0; 
+
+}
+
+.container{
+  margin: auto;
   width: 50%;
   text-align: center;
   background-color: burlywood;
   max-width: fit-content;
   margin-left: auto;
   margin-right: auto;
+}
+
+.circle{
+  display: inline-block;
+  padding: 20px; /* Adjust the size */
+  border-radius: 50%; /* Makes it a circle */
+  background-color: #231c07; /* Set your desired background color */
+  text-align: center;
+  width: 200px; /* Set width */
+  height: 200px; /* Set height */
+  overflow: hidden; /* Ensures the text stays within the circle */
+  justify-content: center;
+  align-items: center;
+
+}
+
+.box-roof {
+  width: auto;
+  height: auto;
+  border-left: 50px solid transparent; 
+  border-right: 50px solid transparent; 
+  border-bottom: 50px solid #8B0000;
+}
+
+
+.bird-box{
+  padding: 20px;
+  font-size: 1.5rem;
+  background-color: #96705b;
+}
+
+.circle-text {
+  margin: auto 0;
+  display: inline-block;
+  padding: 20px; /* Adjust the size */
+  border-radius: 50%; /* Makes it a circle */
+  background-color: #231c07; 
+  text-align: center;
+  width: 250px; /* Set width */
+  height: 250px; /* Set height */
+  justify-content: center;
+  align-items: center;
+}
+
+.bird-box li{
+ list-style: none;
+
 }
 
 aside {
