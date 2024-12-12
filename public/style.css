@@ -114,37 +114,6 @@ strong {
   padding: 3px;
 }
 
-.bird-box {
-  display: flex; /* Ensures vertical stacking of child elements */
-  flex-direction: column;
-  gap: 1rem; /* Adds space between child elements */
-}
-
-.bird-box ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 150px); /* 3 columns */
-  gap: 16px; /* Spacing between grid items */
-  list-style: none;
-  padding: 0;
-  margin: 0 auto; /* Centers grid horizontally */
-  max-width: 100%; /* Ensures the grid doesn't overflow */
-}
-
-.bird-box li {
-  background-color: #703e1a;
-  padding: 8px;
-  text-align: center;
-  border: 1px solid burlywood;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.bird-box h2,
-.bird-box p {
-  text-align: center; /* Optional: Center-align text */
-  margin: 0 auto; /* Centers text blocks horizontally */
-  max-width: 800px; /* Limits text width */
-}
 
 main,
 aside {
