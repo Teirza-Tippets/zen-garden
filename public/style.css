@@ -2,6 +2,8 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-shadow: #5a5246 1px 1px;
   color: rgb(243, 243, 243);
+  overflow-x: hidden;
+
 }
 h1,
 h2,
@@ -19,6 +21,24 @@ html {
 .skip-link{
   display: hidden;
 }
+
+/* Overlay the SVG across the entire page */
+body::before {
+  content: ''; /* Required for pseudo-element to display */
+  position: fixed; /* Ensures it stays in place while scrolling */
+  top: 0;
+  left: 0;
+  margin-top: 1000px;
+  width: 100vw; /* Full viewport width */
+  height: 200vh; /* Full viewport height */
+  background: url('stars.svg') repeat-x center; /* Add your SVG */
+  background-size: cover; /* Scale the SVG to cover the screen */
+  z-index: -1; /* Ensure it overlays all other content */
+  pointer-events: none; /* Allow clicks to pass through */
+  animation: twinkle 20s infinite ease;
+}
+
+
 
 header,
 header .container {
@@ -41,6 +61,28 @@ header .container {
     transform: rotate(0.5deg);
   }
 }
+@keyframes twinkle {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  40% {
+    transform: rotate(75deg);
+    opacity: 0.5;
+  }
+  60% {
+    transform: rotate(75deg);
+    opacity: 0;
+  }
+  80% {
+    transform: rotate(75deg);
+    opacity: 0.5;
+  }
+  100% {
+    transform: rotate(75deg);
+    opacity: 0;
+  }
+}
 
 @keyframes russle {
   0% {
@@ -59,6 +101,7 @@ header .container {
     background-position: 0 0;
   }
 }
+
 nav {
   margin: 0 auto;
   max-width: 1500px;
@@ -91,10 +134,10 @@ body {
     to top,
     rgba(2, 0, 36, 1) 0%,
     rgba(9, 9, 121, 1) 35%,
-    rgba(0, 212, 255, 1),
-    rgba(0, 212, 255, 1) 100%
+    rgb(95, 228, 255) 80%
   );
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
 }
 body {
   animation: sway 15s infinite linear;
