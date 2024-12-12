@@ -16,8 +16,10 @@ html {
   padding: 0;
   margin: 0 auto;
 }
+.skip-link{
+  display: hidden;
+}
 
-.skip-link,
 header,
 header .container {
   padding: 0;
