@@ -1,13 +1,30 @@
 .skip-link,
 header,
-nav {
+header .container, nav {
   padding: 0 auto;
   margin: 0;
-  background:greenyellow 
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='45' height='50'%3E%3Cpath d='M25 0 C40 15, 40 35, 25 50 C10 35, 10 15, 25 0 Z' fill='%2376b852'/%3E%3Cpath d='M25 0 C40 15, 40 35, 25 50 C10 35, 10 15, 25 0 Z' fill='%234c9e3f' transform='rotate(45 25 25)'/%3E%3C/svg%3E") repeat;
-  background-repeat: repeat;
+  background: greenyellow url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='45' height='50'%3E%3Cpath d='M25 0 C40 15, 40 35, 25 50 C10 35, 10 15, 25 0 Z' fill='%2376b852'/%3E%3Cpath d='M25 0 C40 15, 40 35, 25 50 C10 35, 10 15, 25 0 Z' fill='%234c9e3f' transform='rotate(45 25 25)'/%3E%3C/svg%3E") repeat;
+  animation: russle 3s infinite linear;
+  overflow: hidden;
 }
 
+@keyframes russle {
+  0% {
+    background-position: 0 0;
+  }
+  25% {
+    background-position: 1px 0px;
+  }
+  50% {
+    background-position: 0 0px;
+  }
+  75% {
+    background-position: -1px 0px;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
 nav ul {
   list-style-type: none;
   display: flex;
@@ -15,7 +32,6 @@ nav ul {
   padding: 15px;
   margin: 0;
 }
-
 nav ul li:hover {
   background-color: darkgreen;
   cursor: pointer;
@@ -80,4 +96,50 @@ footer {
   color: white;
   display: flex;
   padding: 20px;
+}
+
+aside {
+  background-color: skyblue;
+}
+aside .container {
+  width: 50%;
+  text-align: center;
+  background-color: burlywood;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+#files .container {
+  width: 50%;
+  text-align: center;
+  background-color: burlywood;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-footer {
+  position: relative;
+  background-color: #59442e;
+  color: white;
+  padding: 4rem 0;
+  overflow: hidden;
+}
+
+.page-footer .container {
+  position: relative;
+  z-index: 1;
+  /* Keeps content on top of everything */
+  text-align: center;
+  background-color: #59442e;
+  /* Same as page-footer */
+  padding: 2rem;
+  border-radius: 10px;
+  /* Optional for rounded corners */
+  /* Background Gradient */
+  background-image: radial-gradient(circle at 10% 20%, #402c1e 2%, transparent 3%), radial-gradient(circle at 50% 50%, #665545 1.5%, transparent 2%), radial-gradient(circle at 80% 30%, #4b3f34 2%, transparent 2.5%), radial-gradient(circle at 20% 80%, #3a3026 2.5%, transparent 3%), radial-gradient(circle at 70% 70%, #5b4c3c 2%, transparent 2.5%);
+  background-size: 30% 30%;
+  /* Adjusts spacing of each repetition */
+  background-repeat: repeat;
 }
