@@ -1,0 +1,30 @@
+#files .container {
+  width: 50%;
+  text-align: center;
+  background-color: burlywood;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-footer {
+  position: relative;
+  background-color: rgb(89, 68, 46);
+  color: white;
+  padding: 4rem 0;
+  overflow: hidden;
+}
+
+.page-footer .container {
+  position: relative;
+  z-index: 1; /* Keeps content on top of everything */
+  text-align: center;
+  background-color: rgb(89, 68, 46); /* Same as page-footer */
+  padding: 2rem;
+  border-radius: 10px; /* Optional for rounded corners */
+  /* Background Gradient */
+  background-image: radial-gradient(circle at 10% 20%, rgb(64, 44, 30) 2%, transparent 3%), radial-gradient(circle at 50% 50%, rgb(102, 85, 69) 1.5%, transparent 2%), radial-gradient(circle at 80% 30%, rgb(75, 63, 52) 2%, transparent 2.5%), radial-gradient(circle at 20% 80%, rgb(58, 48, 38) 2.5%, transparent 3%), radial-gradient(circle at 70% 70%, rgb(91, 76, 60) 2%, transparent 2.5%);
+  background-size: 30% 30%; /* Adjusts spacing of each repetition */
+  background-repeat: repeat;
+}/*# sourceMappingURL=footer.css.map */
